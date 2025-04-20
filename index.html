@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Week 6 assignment</title> 
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body> 
+  <h1>Week 6 wed development assignment</h1>
+  <div class="container">
+    <h2>Join My mailing services</h2>
+    <form id="subscribeForm">
+      <input type="text" id="name" placeholder="Your Name" />
+      <div id="nameError" class="error"></div>
+      
+      <input type="email" id="email" placeholder="Your Email" />
+      <div id="emailError" class="error"></div>
+      
+      <button type="submit">Join Us</button>
+      <div id="formMessage"></div>
+    </form>
+
+    <hr />
+
+    <button id="toggleMessageBtn">Toggle Surprise Message</button>
+    <p id="surpriseMessage" class="hidden">🎉 Surprise! You've found the secret message! 🎉</p> 
+
+    <button type="button"
+    onclick="document.getElementById('demo').innerHTML = Date()">
+    Click me to display Date and Time.</button>
+
+    <p id="demo"></p>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
